@@ -144,7 +144,7 @@ export default {
 		// ========== 试听 ==========
 		triallisten(index, row) {
 			console.log(index, row);
-			const res = `http://xxx.xxx.com/${row.name}.wav`;// http://xxx.xxx.com 是你在七牛云空间cname的域名
+			const res = `http://abc-dadouya-top-idveu4t.qiniudns.com/${row.name}.wav`;// http://xxx.xxx.com 是你在七牛云空间cname的域名
 			this.sound.stop();
 			this.sound = new Howl({ src: [res] });
 			this.sound.play();
@@ -152,7 +152,7 @@ export default {
 		// ========== 使用 ==========
 		usebtnClick(index, row) {
 			// http://xxx.xxx.com 是你在七牛云空间cname的域名
-			const music = { name: row.name, url: `http://xxx.xxx.com/${row.name}.wav`, path: null, isOnline: true, isUseBgm: true };
+			const music = { name: row.name, url: `http://abc-dadouya-top-idveu4t.qiniudns.com/${row.name}.wav`, path: null, isOnline: true, isUseBgm: true };
 			this.$emit("music-change", music);
 			this.dialogVisible = false;
 		},
